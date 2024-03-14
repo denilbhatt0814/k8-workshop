@@ -16,7 +16,8 @@ spec:
         app: my-api
     spec:
       containers:
-        - image: ritesh2000/my-api:latest
+        - image: denilbhatt0814/test-webapp:latest
           name: my-api
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5000
